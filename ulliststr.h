@@ -39,6 +39,13 @@ class ULListStr {
    */
   ~ULListStr();
 
+  //helper function: return size of tail_
+  size_t tail_size() const;
+
+  //helper function: return size of head_
+  size_t head_size() const;
+
+
   /**
    * Returns the current number of items in the list (NOT the number of nodes)
    *   - MUST RUN in O(1)
@@ -120,7 +127,6 @@ class ULListStr {
    *   - MUST RUN in O(n) 
    */
   std::string* getValAtLoc(size_t loc) const;
-
 
   /**
    * Data members
